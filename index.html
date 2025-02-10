@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Requirements Checker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>.valid { color: green; }
+        .invalid { color: red; }
+        #requirements li { list-style-type: none; }
+    </style>
+ </head>
+<body>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Check</button>
+    <div id="result"></div>
+    <ul id="requirements">
+        <li id="length">✓ At least 8 characters</li>
+        <li id="uppercase">✓ Contains uppercase letter</li>
+        <li id="number">✓ Contains number</li>
+        <li id="special">✓ Contains special character</li>
+    </ul>
+ <script src="script.js"></script>
+</body>
+</html>
+
